@@ -1,0 +1,97 @@
+:root {
+    --colorPrimario: #e2842c; /*--Color de los titulos de cda sección y del borde inferior de las imagenes--*/
+    --colorSecundario: #f58115; /*--Color de los botones--*/
+}
+
+#carouselIndex{
+    margin-top: 1%;
+}
+
+.containerTitulo{ /*--Estilos de los titulos que separan cada sección--*/
+    background-color: var(--colorPrimario) ;
+    color: aliceblue;
+    padding: 8px;
+    padding-top: 3px;
+    margin: 1.5% auto;
+    margin-top: 2%;
+}
+.containerTitulo h2{
+    margin: 0;
+}
+
+/*--Sección de servicios más solicitados--*/
+.containerServicios{
+    display: flex;    
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.containerServicios div{
+    margin: 0 1%;
+}
+.btnServicios{
+    background-color: var(--colorSecundario) !important;
+    border-color: var(--colorSecundario) !important;
+    transition: all 0.3s;
+}
+.btnServicios:hover{
+    background-color: #db7618 !important;
+    transition: all 0.3s;
+}
+.cardImgTop{ /*--Imagen de los servicios más solicitados--*/
+    border-bottom: 5px solid var(--colorPrimario);
+}
+
+/*--Sección de los comentarios--*/
+.comentario{
+    background-color: rgb(228, 228, 228);
+    border: 2.5px solid var(--colorSecundario);
+    border-bottom-width: 0px;
+    width: 90%;
+    margin: 1.5% auto;
+    padding: 5px;
+    padding-bottom: 1%;
+}
+.viñetaIzquierda{/*--Comentario con viñeta hacia la izquierda--*/
+    clip-path: polygon(0% 0%, 10% 0%, 100% 0%, 100% 100%, 62% 100%, 3% 100%, 3% 37%);
+    padding-left: 5%;
+    border-left-width: 0px;
+}
+.viñetaDerecha{/*--Comentario con viñeta hacia la derecha--*/
+    clip-path: polygon(0% 0%, 78% 0%, 100% 0%, 96% 31%, 96% 100%, 0% 100%, 0% 36%);
+    padding-left: 2%;
+    padding-right: 5%;
+    border-right-width: 0px;
+}
+.comentario p{
+    margin-bottom: 0;
+}
+.comentario p span{/*--Comillas de los comentarios--*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.spanNombreCliente{
+    font-weight: bold;
+}
+
+/*--Responsive--*/
+@media screen and (max-width: 991px){
+    .containerServicios{
+        display: block;
+    }
+    .containerServicios .card{
+        width: 100% !important;
+    }
+    .containerServicios .card img{
+        width: 80%;
+        border-width: 0px;
+    }
+    .containerImgCard{
+        text-align: center;
+        overflow: hidden;
+        height: 22vw;
+    }
+    .card-body{
+        border-top: 5px solid var(--colorPrimario);
+    }
+}

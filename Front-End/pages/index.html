@@ -4,9 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sonrilaser</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div class="container">
+        <div id="carouselIndex" class="carousel slide" data-bs-ride="carousel"> <!--Seccion del slider-->
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/img-slider-3.jpg" class="d-block w-100" alt="imagen de slider uno">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/img-slider-2.jpg" class="d-block w-100" alt="Imagen de slider dos">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/img-slider-1.jpg" class="d-block w-100" alt="Imagen de slider tres">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndex"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndex"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <main> <!--Seccion de los servicios más solicitados por los clientes-->
+            <div class="containerTitulo">
+                <h2>Servicios más solicitados</h2>
+            </div>
+
+            <div class="containerServicios">
+                <div class="card" style="width: 33.3%;">
+                    <div class="containerImgCard">
+                        <img src="../images/servicios/diseno-de-sonrisa.jpg" loading="lazy" class="cardImgTop" alt="imagen de diseño de sonrisa">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Diseño de sonrisa</h5>
+                        <p class="card-text">
+                            Quieres tener unos dientes perfectos y una hermosa sonrisa?<br>
+                            Nuestro equipo de excelentes especialistas en Diseño de Sonrisa le darán a tus dientes el tamaño, 
+                            la blancura y la apariencia necesaria para que logres ese cambio de imagen que mejorará aún mas tu calidad de vida.
+                        </p>
+                        <a href="#" class="btn btn-primary btnServicios">Conocer más</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 33.3%;">
+                    <div class="containerImgCard">
+                        <img src="../images/servicios/endodoncia.jpg" loading="lazy" class="cardImgTop" alt="imagen de endodoncia">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Endodoncia</h5>
+                        <p class="card-text">
+                            Le devolvemos a tus dientes enfermos la salud, funciones y apariencia evitando así que sean extraidos 
+                            y puedas conservar tus dientes originales. <br>
+                            Te ofrecemos un excelente tratamiento de conductos y el 
+                            blanqueamiento tanto interno como externo del diente que halla recibido el tratamiento de conducto.
+                        </p>
+                        <a href="#" class="btn btn-primary btnServicios">Conocer más</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 33.3%;">
+                    <div class="containerImgCard">
+                        <img src="../images/servicios/implantologia.jpg" loading="lazy" class="cardImgTop" alt="imagen de implantología">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Implantes dentales</h5>
+                        <p class="card-text">
+                            Los Implantes dentales son la perfecta solución a la pérdida de tus dientes.<br>
+                            Para ello contamos no solo con un equipo de especialistas altamente calificado, sino además con las mejores marcas de implantes Dentales.
+                        </p>
+                        <a href="#" class="btn btn-primary btnServicios">Conocer más</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="container-comentarios">
+            <div class="containerTitulo">
+                <h2>Comentarios de nuestros mejores clientes</h2>
+            </div>
+
+            <div class="comentario viñetaIzquierda">
+                <h5>Paciente: <span class="spanNombreCliente">Persona 1</span></h5>
+                <p>
+                    <span>"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae, 
+                    quas ducimus aliquid officiis facilis obcaecati eius tempora iusto repellendus repudiandae voluptate repellat 
+                    nam quod dolorem. Incidunt commodi rerum aut!<span>"</span>
+                </p>
+            </div>
+
+            <div class="comentario viñetaDerecha">
+                <h5>Paciente: <span class="spanNombreCliente">Persona 2</span></h5>
+                <p>
+                    <span>"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae, 
+                    quas ducimus aliquid officiis facilis obcaecati eius tempora iusto repellendus repudiandae voluptate repellat 
+                    nam quod dolorem. Incidunt commodi rerum aut!<span>"</span>
+                </p>
+            </div>
+
+            <div class="comentario viñetaIzquierda">
+                <h5>Paciente: <span class="spanNombreCliente">Persona 3</span></h5>
+                <p>
+                    <span>"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae, 
+                    quas ducimus aliquid officiis facilis obcaecati eius tempora iusto repellendus repudiandae voluptate repellat 
+                    nam quod dolorem. Incidunt commodi rerum aut!<span>"</span>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
