@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+
+#cajaPrincipalMenu {
+    border: 0px solid;
+    display: flex;
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e2842c;
+}
+
+#cajaLogo {
+    width: 12%;
+    border-radius: 5px;
+    background-color: #f5f5d6;
+}
+
+#imagenLogo {
+    margin-left: 3px;
+    margin-top: 3px;
+    height: 64px;
+    background-image: url(../images/logo_sonrilaser.png);
+    background-size: 100% 100%;
+}
+
+#cajaMenu {
+    width: 45%;
+}
+
+.botonesMenu {
+    border: none;
+    width: 25%;
+    height: 67px;   
+    margin-right: -3px; 
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-family: Cairo, sans-serif;
+    font-size: 17px;
+    transition: 500ms;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: #e2842c;
+}
+
+.botonesMenu:hover {
+    background-color: rgb(214, 116, 51);
+    color: white;
+    transition: 500ms;
+    border-bottom: 5px solid rgb(18, 5, 44);
+}
+
+#botonInicio {
+    margin-left: 0px;
+    width: 15%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+#listaProcedimientos {
+    position: absolute;
+    z-index: 100;
+    visibility: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+.itemsProcedimientos:hover {
+    background-color: rgb(214, 89, 51);
+}
+
+#botonProcedimientos:hover #listaProcedimientos {
+    color: white;
+    text-align: left;
+    width: 18%;
+    margin-top: 1.5%;
+    margin-left: -5px;
+    padding-left: 0px;
+    background-color: #F79233;
+    visibility: visible;
+    display: block;
+}
+
+#cajaLogin {
+    width: 15.5%;
+    height: 65px;
+    position: absolute;
+    right: 0;
+}
+
+#cajaImagenLogin {
+    width: 23%;
+    height: 50px;
+    margin-top: 6px;
+    float: left;
+    cursor: pointer;
+}
+
+#imagenLogin {
+    background-image: url(../images/icono-login.png);
+    background-size: 100% 100%;
+    height: 50px
+}
+
+#botonIniciarSesion {
+    border: none;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    font-family: Cairo, sans-serif;
+    font-size: 17px;
+    transition: 500ms;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(17, 17, 51);
+}
+
+#botonIniciarSesion:hover {
+    background-color: rgb(54, 54, 131);
+    color: white;
+    transition: 500ms;
+    border-bottom: 5px solid rgb(69, 135, 228);
+}
+
+label {
+    padding: 15px;
+    height: 26px;
+    margin-left: 3px;
+    margin-bottom: 15px;
+    float: left;
+    cursor: pointer;
+}
+
+#cajaRedesSociales {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 3.5%;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(174, 208, 154);
+    z-index: 200;
+}
+
+.compartirRedes {
+    font-size: 40px;
+    margin-top: 11%;
+}
