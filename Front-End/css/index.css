@@ -39,6 +39,7 @@
 }
 .cardImgTop{ /*--Imagen de los servicios más solicitados--*/
     border-bottom: 5px solid var(--colorPrimario);
+    width: 100%;
 }
 
 /*--Sección de los comentarios--*/
