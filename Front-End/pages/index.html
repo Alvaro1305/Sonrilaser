@@ -10,6 +10,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
+    <div id="particles-js"></div>
+    <header id="cajaPrincipalMenu">
+        <div id="cajaLogo">
+            <a href="index.html"><div id="imagenLogo"></div></a>
+        </div>
+        <nav id="cajaMenu">
+            <a href=""><button class="botonesMenu" id="botonInicio">INICIO</button></a>
+            <a href=""><button class="botonesMenu" id="botonProcedimientos">PROCEDIMIENTOS
+                <ul id="listaProcedimientos">
+                    <a href=""><li class="itemsProcedimientos">IMPLANTES</li></a>
+                    <a href=""><li class="itemsProcedimientos">DISEÑO DE SONRISA</li></a>
+                    <a href=""><li class="itemsProcedimientos">ENDODONCIA</li></a>
+                    <a href=""><li class="itemsProcedimientos">BLANQUEAMIENTO DENTAL</li></a>
+                    <a href=""><li class="itemsProcedimientos">ORTODONCIA</li></a>
+                    <a href=""><li class="itemsProcedimientos">PERIODONCIA</li></a>
+                    <a href=""><li class="itemsProcedimientos">ODONTOLOGÍA GENERAL</li></a>
+                    <a href=""><li class="itemsProcedimientos">ODONTOLOGÍA PEDIÁTRICA</li></a>
+                </ul>
+            </button></a>
+            <a href=""><button class="botonesMenu">¿QUIÉNES SOMOS?</button></a>
+            <a href=""><button class="botonesMenu">CONTÁCTANOS</button></a>
+        </nav>
+        <nav id="cajaLogin">
+            <a href="login.html" target="_blanc"><button id="botonIniciarSesion"><div id="cajaImagenLogin"><div id="imagenLogin"></div></div><label>INICIAR SESIÓN</label></button></a>
+        </nav>
+    </header>
+    <aside id="cajaRedesSociales">
+        <i class="fas fa-share-alt compartirRedes"></i>
+        <ul id="listaRedesSociales">
+            <li class="itemsRedesSociales"><a href="https://www.facebook.com/sonrilaser/photos/?ref=page_internal" target="_blanc"><i class="fab fa-facebook-square redesSociales"></i></a></li>
+            <li class="itemsRedesSociales"><a href="https://www.instagram.com/clinicasonrilaser/" target="_blanc"><i class="fab fa-instagram redesSociales"></i></a></li>
+        </ul>
+    </aside>
     <div class="container">
         <div id="carouselIndex" class="carousel slide" data-bs-ride="carousel"> <!--Seccion del slider-->
             
@@ -42,7 +75,7 @@
             <div class="containerServicios">
                 <div class="card" style="width: 33.3%;">
                     <div class="containerImgCard">
-                        <img src="../images/servicios/diseno-de-sonrisa.jpg" loading="lazy" class="cardImgTop" alt="imagen de diseño de sonrisa">
+                        <img src="../images/services/diseno-de-sonrisa.jpg" loading="lazy" class="cardImgTop" alt="imagen de diseño de sonrisa">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Diseño de sonrisa</h5>
@@ -57,7 +90,7 @@
 
                 <div class="card" style="width: 33.3%;">
                     <div class="containerImgCard">
-                        <img src="../images/servicios/endodoncia.jpg" loading="lazy" class="cardImgTop" alt="imagen de endodoncia">
+                        <img src="../images/services/endodoncia.jpg" loading="lazy" class="cardImgTop" alt="imagen de endodoncia">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Endodoncia</h5>
@@ -73,7 +106,7 @@
 
                 <div class="card" style="width: 33.3%;">
                     <div class="containerImgCard">
-                        <img src="../images/servicios/implantologia.jpg" loading="lazy" class="cardImgTop" alt="imagen de implantología">
+                        <img src="../images/services/implantologia.jpg" loading="lazy" class="cardImgTop" alt="imagen de implantología">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Implantes dentales</h5>
@@ -121,6 +154,25 @@
         </section>
     </div>
 
+    <footer id="cajaFooter">
+        <div id="cajaDoctor">
+            <div id="imagenDoctor"></div>
+        </div>
+        <p id="nombreDoctor">Dr. Carlos Delgado Santaella</p>
+        <p id="direcciones" class="direccionFisica">
+            Av. 1# 18-53 Barrio Blanco<br>
+            Junto a la Clínica Norte<br>
+            Cúcuta - Colombia
+        </p>
+        <p id="direcciones" class="numeroTelefono">
+            PBX: (+57) (7) 584 0405<br>
+            Móvil: (+57) 311 229 34 34
+        </p>
+    </footer>
+
+    <script src="../js/particles.js/particles.min.js"></script>
+    <script src="../js/particles.js/particles-settings-index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/500fb45325.js" crossorigin="anonymous"></script>
 </body>
 </html>

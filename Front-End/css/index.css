@@ -1,10 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body {
+    background-color: rgb(235, 224, 212) !important;
+}
+
 :root {
     --colorPrimario: #e2842c; /*--Color de los titulos de cda sección y del borde inferior de las imagenes--*/
     --colorSecundario: #f58115; /*--Color de los botones--*/
 }
 
+.container{
+    margin-top: 2% !important;
+}
+
 #carouselIndex{
     margin-top: 1%;
+}
+
+#particles-js { /*--Configuración del contenedor de las particulas--*/
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
 }
 
 .containerTitulo{ /*--Estilos de los titulos que separan cada sección--*/
@@ -95,4 +115,262 @@
     .card-body{
         border-top: 5px solid var(--colorPrimario);
     }
+}
+
+/*CSS de Fherney Silva*/
+
+#cajaPrincipalMenu {
+    border: 0px solid;
+    display: flex;
+    width: 100%;
+    height: 65px;
+    background-color: #e2842c;
+}
+
+#cajaLogo {
+    width: 12%;
+    border-radius: 5px;
+    background-color: #f5f5d6;
+}
+
+#imagenLogo {
+    margin-left: 3px;
+    margin-top: 3px;
+    height: 64px;
+    background-image: url(../images/logo_sonrilaser.png);
+    background-size: 100% 100%;
+}
+
+#cajaMenu {
+    width: 45%;
+}
+
+.botonesMenu {
+    border: none;
+    width: 25%;
+    height: 67px;   
+    margin-right: -3px; 
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-family: Cairo, sans-serif;
+    font-size: 17px;
+    transition: 500ms;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: #e2842c;
+}
+
+.botonesMenu:hover {
+    background-color: rgb(214, 89, 51);
+    color: white;
+    transition: 500ms;
+    border-bottom: 5px solid rgb(18, 5, 44);
+}
+
+#botonInicio {
+    margin-left: 0px;
+    width: 15%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+#listaProcedimientos {
+    position: absolute;
+    z-index: 100;
+    width: 18%;
+    visibility: hidden;
+    transition: 500ms;
+    text-align: left;
+    padding-left: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.itemsProcedimientos { 
+    padding: 0.8%;
+}
+
+.itemsProcedimientos:hover {
+    background-color: rgb(214, 89, 51);
+}
+
+#botonProcedimientos a {
+    text-decoration: none;
+    color: #ffff !important;
+}
+
+#botonProcedimientos:hover #listaProcedimientos {
+    color: white !important;
+    text-align: left;
+    width: 18%;
+    margin-top: 1.5%;
+    margin-left: -5px;
+    padding-left: 0px;
+    transition: 500ms;
+    background-color: #F79233;
+    visibility: visible;
+    display: block;
+}
+
+#cajaLogin {
+    width: 15.5%;
+    height: 65px;
+    position: absolute;
+    right: 0;
+}
+
+#cajaImagenLogin {
+    width: 23%;
+    height: 50px;
+    margin-top: 6px;
+    float: left;
+    cursor: pointer;
+}
+
+#imagenLogin {
+    background-image: url(../images/icono-login.png);
+    background-size: 100% 100%;
+    height: 50px
+}
+
+#botonIniciarSesion {
+    border: none;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    font-family: Cairo, sans-serif;
+    font-size: 17px;
+    transition: 500ms;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(17, 17, 51);
+}
+
+#botonIniciarSesion:hover {
+    background-color: rgb(54, 54, 131);
+    color: white;
+    transition: 500ms;
+    border-bottom: 5px solid rgb(69, 135, 228);
+}
+
+label {
+    padding: 15px;
+    height: 26px;
+    margin-left: 3px;
+    margin-bottom: 15px;
+    float: left;
+    cursor: pointer;
+}
+
+#cajaRedesSociales {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 3.5%;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(154, 208, 180);
+    z-index: 200;
+}
+
+.compartirRedes {
+    font-size: 40px;
+    margin-top: 11%;
+}
+
+#listaRedesSociales {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
+    margin-left: 50px;
+    margin-top: -68px;
+    height: 93px;
+    padding-left: 0%;
+    border-radius: 15px;
+    background-color: rgb(17, 17, 51);
+}
+
+#listaRedesSociales a{
+    color: #ffff;
+}
+
+#cajaRedesSociales:hover #listaRedesSociales {
+    color: white;
+    text-align: left;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.redesSociales {
+    font-size: 44.5px;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+
+#cajaFooter {
+    border: 0px solid;
+    width: 100%;
+    height: 105px;
+    background-color: #4c4452;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cajaDoctor {
+    width: 7%;
+    margin-top: 3px;
+    margin-left: 2%;
+}
+
+#imagenDoctor {
+    background-image: url(../images/imagen-doctor.png);
+    background-size: 100% 100%;
+    height: 100px;
+}
+
+#nombreDoctor {
+    float: right;
+    color: white;
+    margin-left: 2%;
+    margin-top: 2.8%;
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#direcciones {
+    width: 20%;
+    height: 55px;
+    color: white;
+    margin-left: 15%;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+.direccionFisica{
+    margin-top: 0 !important;
+}
+
+.numeroTelefono{
+    margin-top: 2.3%;
 }
