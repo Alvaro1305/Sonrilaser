@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+#particles-js { /*--Configuración del contenedor de las particulas--*/
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.form{ /*--Contenedor main--*/
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerInicioSesion{
+    border: 5px solid #9b4b00;
+    border-radius: 10px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.containerInicioSesion img{ /*--Logo--*/
+    width: 40%;
+}
+.containerInicioSesion h2{ /*--Subtitulo "login"--*/
+    text-align: center;
+    margin-top: 0.8%;
+    margin-bottom: 4%;
+}
+.containerInicioSesion form{
+    width: 80%;
+    margin: 0 auto;
+}
+.logoTitulo{
+    text-align: center;
+    margin-top: 2%;
+}
+.containerButtons{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.containerRegistro{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5%;
+}
+
+h2 {
+    margin-top: 1%;
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+}
+
+.confirmarContraseña{
+    margin-top: 3% !important;
+}
+
+.lineaSeparacion{
+    border: 1px solid #572c05;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+#btnRegistro, #btnPerdidaContraseña {
+    color: rgb(63, 89, 129);
+}
