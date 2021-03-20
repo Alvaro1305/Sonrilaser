@@ -1,8 +1,10 @@
+let densidadLineasPuntos = 0.32;
+
 particlesJS(
     {
         "particles": {
           "number": {
-            "value": 80,
+            "value": 70,
             "density": {
               "enable": true,
               "value_area": 800
@@ -27,7 +29,7 @@ particlesJS(
             }
           },
           "opacity": {
-            "value": 0.5,
+            "value": densidadLineasPuntos,
             "random": false,
             "anim": {
               "enable": false,
@@ -50,7 +52,7 @@ particlesJS(
             "enable": true,
             "distance": 150,
             "color": "#000",
-            "opacity": 0.4,
+            "opacity": densidadLineasPuntos,
             "width": 1
           },
           "move": {
