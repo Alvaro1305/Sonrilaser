@@ -7,7 +7,7 @@ body {
 }
 
 :root {
-    --colorPrimario: #e2842c; /*--Color de los titulos de cda sección y del borde inferior de las imagenes--*/
+    --colorPrimario: #e2842c; /*--Color del menu y del borde inferior de las imagenes--*/
     --colorSecundario: #f58115; /*--Color de los botones--*/
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 #carouselIndex{
-    margin-top: 1%;
+    margin-top: 6%;
 }
 
 #particles-js { /*--Configuración del contenedor de las particulas--*/
@@ -64,7 +64,7 @@ body {
 
 /*--Sección de los comentarios--*/
 .comentario{
-    background-color: rgb(228, 228, 228);
+    background-color: #eaeaea;
     border: 2.5px solid var(--colorSecundario);
     border-bottom-width: 0px;
     width: 90%;
@@ -99,11 +99,6 @@ body {
     text-align: justify;
 }
 
-.comentario {
-    background-color: white;
-}
-
-
 
 /*--Responsive--*/
 @media screen and (max-width: 991px){
@@ -135,6 +130,10 @@ body {
     width: 100%;
     height: 50px;
     background-color: var(--colorPrimario);
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 #cajaLogo {
@@ -144,11 +143,13 @@ body {
 }
 
 #imagenLogo {
-    margin-left: 3px;
+    margin-left: 10px;
     margin-top: 3px;
     height: 48px;
+    min-height: 40px;
     background-image: url(../images/logo_sonrilaser.png);
-    background-size: 100% 100%;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
 }
 
 #cajaMenu {
@@ -253,7 +254,8 @@ li {
 
 #imagenLogin {
     background-image: url(../images/icono-login.png);
-    background-size: 100% 100%;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
     height: 30px
 }
 
@@ -292,16 +294,15 @@ label {
     left: 0;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    width: 2.5%;
-    height: 45px;
-    cursor: pointer;
+    width: 40px;
+    padding: 5px 0;
+    padding-top: 7px;
     background-color: rgb(154, 195, 208);
     z-index: 200;
 }
 
 .compartirRedes {
     font-size: 30px;
-    margin-top: 8px;
 }
 
 #listaRedesSociales {
@@ -342,11 +343,10 @@ label {
 }
 
 #cajaFooter {
-    border: 0px solid;
     width: 100%;
-    height: 105px;
     background-color: #4c4452;
-    
+    padding: 8px 0px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,8 +360,12 @@ label {
 
 #imagenDoctor {
     background-image: url(../images/imagen-doctor.png);
-    background-size: 100% 100%;
-    height: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 7vw;
+    min-height: 70px;
+    min-width: 70px;
 }
 
 #nombreDoctor {
@@ -375,7 +379,6 @@ label {
 
 #direcciones {
     width: 20%;
-    height: 55px;
     color: white;
     margin-left: 15%;
     font-family: 'Raleway', sans-serif;

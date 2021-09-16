@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+.container{
+    display: inline-flex;
+    margin: 70px;
+    justify-content: center;
+    align-content: center;
+    width: 100% ;
+}   
+#inf{
+    background-color: #676464;
+    color: white;
+    width: 28%;
+    align-content: center;
+}
+
+#raya{
+    background-color: #E08027;
+    z-index: -12; 
+    border: #E08027 solid;
+    width: 855px;
+    margin-left: 42px;
+}
+
+#local{
+    display: inline-flex;
+    margin-top: 12px;
+    align-content: center;
+}
+
+#bus {
+    width: 10%;
+    height: 10%;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+#cucuta{
+    font-size: 25px;
+    padding: auto;  
+    margin-left: 8x;
+}
+
+ul li{
+    list-style:none;
+    margin-top: 12px;
+}
+
+.container_Data #c_Tittle{
+    margin-left: 42px;
+    margin-top: 12px;
+    font-size: 25px;
+}
+
+#name{
+    margin-left: 32px;
+}
+
+#textName{
+    width: 548px;
+}
+
+#horizontal{
+    width: 50px;
+    margin-left: 32px;  
+    display: inline-flex;
+}
+
+#message{
+    margin-left: 32px;  
+}
+
+#container_Check{
+    margin-left: 25px;
+    display: inline-flex;
+    font-size: 12px;
+}
+
+#check{
+    width: 40px;
+	height: 20px;
+    margin-top: 8px;
+}
+
+#boto{
+    margin-left: 115px;
+    margin-top:  2px;
+}
+
+#send{
+   width: 65px;
+   height: 35px;
+   border-radius: 6px;
+   background-color: #F68C29;
+   color: white;
+   border-color: #F68C29;
+}
+
+#send:hover{
+    background-color: #E08027;
+}
